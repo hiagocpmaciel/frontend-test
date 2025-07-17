@@ -1,0 +1,78 @@
+.price-tracker {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.price-tracker h2 {
+    margin: 0 0 1rem 0;
+    color: #333;
+    font-size: 1.1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.loading-state {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+}
+
+.price-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    overflow-y: auto;
+}
+
+.price-item {
+    padding: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    transition: all 0.2s;
+}
+
+.price-item:hover {
+    background-color: #e9ecef;
+}
+
+.price-symbol {
+    font-weight: 600;
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.price-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.price-detail {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-label {
+    color: #666;
+}
+
+.price-value {
+    color: #333;
+    font-weight: 500;
+}
+
+.price-change {
+    font-weight: 600;
+}
+
+.price-change.positive {
+    color: #28a745;
+}
+
+.price-change.negative {
+    color: #dc3545;
+}

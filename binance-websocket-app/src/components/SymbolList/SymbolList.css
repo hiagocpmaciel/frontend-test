@@ -1,0 +1,86 @@
+.symbol-list-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.symbol-list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.symbol-list-header h3 {
+    margin: 0;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.count {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+}
+
+.empty-state p {
+    margin: 0 0 0.5rem 0;
+}
+
+.empty-subtitle {
+    font-size: 0.9rem;
+    color: #999;
+}
+
+.selected-symbols {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.selected-symbol-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem;
+    background-color: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.selected-symbol-item:hover {
+    background-color: #e9ecef;
+}
+
+.symbol-name {
+    font-weight: 500;
+    color: #333;
+}
+
+.remove-button {
+    background: none;
+    border: none;
+    color: #dc3545;
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+
+.remove-button:hover {
+    background-color: #dc3545;
+    color: white;
+}
